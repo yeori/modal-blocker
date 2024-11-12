@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "data.go.kr modal remover",
+  "version": "1.0",
+  "description": "Removes annoying confirm modals on data.go.kr",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://www.data.go.kr/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.data.go.kr/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

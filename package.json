@@ -1,0 +1,36 @@
+{
+  "name": "modal-blocker",
+  "version": "1.0.0",
+  "description": "close annoying modal",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "https://github.com/yeori",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": [],
+  "author": {
+    "name": "Yeori",
+    "email": "yeori.seo@gmail.com",
+    "url": "http://github.com/yeori"
+  },
+  "contributors": [],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "compile": "npx tsc",
+    "cpa": "cp ./src/manifest.json dist/",
+    "build": "npm run clean && npm run compile && npm run cpa"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.280",
+    "typescript": "^5.6.3"
+  }
+}
